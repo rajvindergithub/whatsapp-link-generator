@@ -27,8 +27,16 @@
         function generateWpLink(){
             var getWaNumber = jQuery('#insertNumberWp').val();
             var getWaMessage = jQuery('#waLinkText').val();
+            var data = {number:getWaNumber, message:getWaMessage}
             
-            
+            $.ajax({
+                url: 'submit.php', 
+                type: 'POST',
+                data: data, 
+                success: function(response){
+                    console.log(response);
+                }
+            });
             
         }
     
