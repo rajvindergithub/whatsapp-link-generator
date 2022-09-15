@@ -17,9 +17,3 @@ if(isset($_POST['number'])){
 
 ?>
 
-
-
-https://api.whatsapp.com/send?phone=9999845182&text=Hello%20friend%20how%20are%20you%20dasdf%20adf%20asdf%20asdf%20asf%20asf%20asf%20asf%20asf%20asdf%20
-
-
-
