@@ -26,7 +26,7 @@
             WhatsAppLink
         </div>
         <div id="finalWaLink"><textarea id="wpTextareaText" cols="100" rows="20"></textarea></div>
-        <div id="copyWaLink"><button>Copy WhatApp Link</button></div>
+        <div id="copyWaLink"><button onclick="copyWpLink();">Copy WhatApp Link</button></div>
         <div class="testLinkButton" id="testLinkButton"><a href="javascript:void(0);" id="wpLinkHrefPath" target="_blank">Test WP Link</a></div>
     </section>
 	
@@ -53,6 +53,11 @@
                 }
             });
             
+        }
+        
+        function copyWpLink(){
+              document.querySelector("#wpTextareaText").select();
+              document.execCommand('copy');
         }
     
     </script>
